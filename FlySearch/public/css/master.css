@@ -1,0 +1,13 @@
+/**** PÍE DE PÁGINA ****/
+#footer {
+    background-color: #333;
+}
+
+#footer h2{
+    color:white;
+    font-family: 'Faster One', cursive;
+}
+
+#footer p {
+    color: white;
+}
