@@ -32,6 +32,11 @@
           @endforeach
         </tbody>
     </table>
-    <a class="btn btn-success mt-3 mb-5" type="submit" href="{{ action('AirportController@create') }}">Agregar</a>
+    <div class="col-6">
+        <a class="btn btn-success mt-3 mb-5" type="submit" href="{{ action('AirportController@create') }}">Agregar</a>
+    </div>
+    <div class="col-6">
+        <div class="clearfix mt-3 mb-5"> {{ $airports->links() }} </div>
+    </div>
 </div>
 @stop

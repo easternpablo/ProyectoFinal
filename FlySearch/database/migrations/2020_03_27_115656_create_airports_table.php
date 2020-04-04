@@ -14,10 +14,9 @@ class CreateAirportsTable extends Migration
             $table->string('oaci')->unique();
             $table->string('name')->unique();
             $table->string('coordinates');
-            $table->float('elevation');
-            $table->string('type');
-            $table->string('owner');
-            $table->string('operator');
+            $table->string('type')->nullable();
+            $table->string('owner')->nullable();
+            $table->string('operator')->nullable();
             $table->string('image');
             $table->timestamps();
         });

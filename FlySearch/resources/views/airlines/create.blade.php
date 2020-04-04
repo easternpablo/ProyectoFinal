@@ -7,7 +7,7 @@
         <div class="card">
             <div class="card-header">{{ __('Nueva aerolínea') }}</div>
             <div class="card-body">
-                <form method="POST" action="#" enctype="multipart/form-data">
+                <form method="POST" action="{{ action('AirlineController@save') }}" enctype="multipart/form-data">
                     {{csrf_field()}}
                     <div class="row">
                         <div class="col">
@@ -28,43 +28,38 @@
                     </div>
                     <div class="row">
                         <div class="col">
-                            <label for="coordinates" class="col-form-label text-md-right">{{ __('Coordenadas') }}</label>
-                            <input id="coordinates" type="text" class="form-control @error('coordinates') is-invalid @enderror" name="coordinates" value="{{ old('coordinates') }}" required autocomplete="coordinates" autofocus>
-                            @error('coordinates')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
+                            <label for="company" class="col-form-label text-md-right">{{ __('Compañía') }}</label>
+                            <input id="company" type="text" class="form-control @error('company') is-invalid @enderror" name="company" value="{{ old('company') }}">
+                            @error('company')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                         </div>
                         <div class="col">
-                            <label for="city" class="col-form-label text-md-right">{{ __('Ciudad') }}</label>
-                            <select id="city" class="form-control @error('city') is-invalid @enderror" name="city" value="{{ old('city') }}" required autocomplete="city" autofocus>
-                                <option value="#">-- Seleccione una ciudad --</option>
-                                @foreach($cities as $city)
-                                    <option value="{{$city->id}}">{{$city->name}}</option>
+                            <label for="director" class="col-form-label text-md-right">{{ __('Director') }}</label>
+                            <input id="director" type="text" class="form-control @error('director') is-invalid @enderror" name="director" value="{{ old('director') }}" required autocomplete="director" autofocus>
+                            @error('director')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <label for="headquarter" class="col-form-label text-md-right">{{ __('Sede Central') }}</label>
+                            <input id="headquarter" type="text" class="form-control @error('headquarter') is-invalid @enderror" name="headquarter" value="{{ old('headquarter') }}" required autocomplete="headquarter" autofocus>
+                            @error('headquarter')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
+                        </div>
+                        <div class="col">
+                            <label for="airport" class="col-form-label text-md-right">{{ __('Aeropuerto principal') }}</label>
+                            <select id="airport" class="form-control @error('airport') is-invalid @enderror" name="airport" value="{{ old('airport') }}" required autocomplete="airport" autofocus>
+                                <option value="#">-- Seleccione un aeropuerto --</option>
+                                @foreach($airports as $airport)
+                                    <option value="{{$airport->id}}">{{$airport->name}}</option>
                                 @endforeach
                             </select>
-                            @error('city')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
+                            @error('airport')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <label for="type" class="col-form-label text-md-right">{{ __('Tipo') }}</label>
-                            <input id="type" type="text" class="form-control @error('type') is-invalid @enderror" name="type" value="{{ old('type') }}" required autocomplete="type" autofocus>
-                            @error('type')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
-                        </div>
-                        <div class="col">
-                            <label for="owner" class="col-form-label text-md-right">{{ __('Propietario') }}</label>
-                            <input id="owner" type="text" class="form-control @error('owner') is-invalid @enderror" name="owner" value="{{ old('owner') }}" required autocomplete="owner" autofocus>
-                            @error('owner')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
-                        </div>
-                        <div class="col">
-                            <label for="operator" class="col-form-label text-md-right">{{ __('Operador') }}</label>
-                            <input id="operator" type="text" class="form-control @error('operator') is-invalid @enderror" name="operator" value="{{ old('operator') }}" required autocomplete="operator" autofocus>
-                            @error('operator')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col">
-                            <label for="file-airport" class="col-form-label text-md-right">{{ __('Imagen') }}</label>
-                            <input id="file-airport" type="file" class="form-control-file border @error('file-airport') is-invalid @enderror" name="file-airport" value="{{ old('file-airport') }}" required autocomplete="file-airport" autofocus>
-                            @error('file-airport')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
+                            <label for="file-airline" class="col-form-label text-md-right">{{ __('Imagen') }}</label>
+                            <input id="file-airline" type="file" class="form-control-file border @error('file-airline') is-invalid @enderror" name="file-airline" value="{{ old('file-airline') }}" required autocomplete="file-airline" autofocus>
+                            @error('file-airline')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                         </div>
                     </div>
                     <button type="submit" name="submit" class="btn btn-success mt-4">{{ __('Añadir') }}</button>

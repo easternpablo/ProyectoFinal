@@ -12,10 +12,28 @@
                             <img src="{{ action("AirportController@getImage",['image'=>$airport->image]) }}" alt="Imagen Aeropuerto" style="width:520px; height:320px"/>
                         </div>
                         <div class="col-sm-6">
-                            <p class="mt-5">IATA: {{ $airport->iata }} &nbsp;&nbsp; OACI: {{$airport->oaci}} </p>
-                            <p class="mt-5">Ciudad: {{ $airport->City->name}} &nbsp;&nbsp; Coordenadas: {{$airport->coordinates}}</p>
-                            <p class="mt-5">Tipo: {{ $airport->type}} &nbsp;&nbsp; Propietario: {{$airport->owner}}</p>
-                            <p class="mt-5">Operador: {{$airport->operator}}</p>
+                            <p class="mt-5">
+                                IATA: <strong>{{ $airport->iata }}</strong>
+                                &nbsp;&nbsp;
+                                OACI: <strong>{{ $airport->oaci }}</strong>
+                            </p>
+                            <p>Ciudad: <strong>{{ $airport->City->name }}</strong></p>
+                            <p>Coordenadas: <strong>{{ $airport->coordinates }}</strong></p>
+                            <p>
+                                @if($airport->type != null)
+                                    Tipo: <strong>{{ $airport->type }}</strong>
+                                @endif
+                            </p>
+                            <p>
+                                @if($airport->owner != null)
+                                    Propietario: <strong>{{ $airport->owner }}</strong>
+                                @endif
+                            </p>
+                            <p>
+                                @if($airport->operator != null)
+                                    Operador: <strong>{{ $airport->operator }}</strong>
+                                @endif
+                            </p>
                         </div>
                     </div>
                 </div>

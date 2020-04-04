@@ -11,6 +11,11 @@ Route::group(['prefix'=>'flysearch','middleware'=>'auth'], function () {
 
     /*** Rutas Aerolíneas ***/
     Route::get('/aerolineas','AirlineController@showAirlines');
+    Route::get('/aerolineas/nuevo','AirlineController@create');
+    Route::post('/aerolineas/nuevo/submit','AirlineController@save');
+    Route::get('/aerolineas/{filename}','AirlineController@getImage');
+    Route::get('/aerolineas/delete/{id}','AirlineController@delete')->where('id','[0-9]+');
+    Route::get('/aerolineas/detail/{id}','AirlineController@showDetail')->where('id','[0-9]+');
 
     /*** Rutas Destinos (Aeropuertos) ***/
     Route::group(['prefix'=>'destinos'], function () {

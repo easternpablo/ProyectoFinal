@@ -13,7 +13,7 @@ class CreateAirlinesTable extends Migration
             $table->string('iata')->unique();
             $table->string('oaci')->unique();
             $table->string('name',100)->unique();
-            $table->string('company',100);
+            $table->string('company',100)->nullable();
             $table->string('director',100);
             $table->string('headquarter',50);
             $table->string('image');

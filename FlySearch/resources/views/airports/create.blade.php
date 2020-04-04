@@ -46,17 +46,17 @@
                     <div class="row">
                         <div class="col">
                             <label for="type" class="col-form-label text-md-right">{{ __('Tipo') }}</label>
-                            <input id="type" type="text" class="form-control @error('type') is-invalid @enderror" name="type" value="{{ old('type') }}" required autocomplete="type" autofocus>
+                            <input id="type" type="text" class="form-control @error('type') is-invalid @enderror" name="type" value="{{ old('type') }}">
                             @error('type')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                         </div>
                         <div class="col">
                             <label for="owner" class="col-form-label text-md-right">{{ __('Propietario') }}</label>
-                            <input id="owner" type="text" class="form-control @error('owner') is-invalid @enderror" name="owner" value="{{ old('owner') }}" required autocomplete="owner" autofocus>
+                            <input id="owner" type="text" class="form-control @error('owner') is-invalid @enderror" name="owner" value="{{ old('owner') }}">
                             @error('owner')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                         </div>
                         <div class="col">
                             <label for="operator" class="col-form-label text-md-right">{{ __('Operador') }}</label>
-                            <input id="operator" type="text" class="form-control @error('operator') is-invalid @enderror" name="operator" value="{{ old('operator') }}" required autocomplete="operator" autofocus>
+                            <input id="operator" type="text" class="form-control @error('operator') is-invalid @enderror" name="operator" value="{{ old('operator') }}">
                             @error('operator')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                         </div>
                     </div>
