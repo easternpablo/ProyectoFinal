@@ -3,7 +3,7 @@
 Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 
-Route::group(['prefix'=>'flysearch','middleware'=>'auth'], function () {
+Route::group(['prefix'=>'vi-flights','middleware'=>'auth'], function () {
 
     Route::get('/',function(){
         return view('inicio');

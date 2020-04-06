@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>@yield('titulo') - FlySearch</title>
+    <title>@yield('titulo') - Vi-Flights</title>
     <link rel="icon" href="{{url('img/fleet.png')}}"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -16,7 +16,7 @@
     @section('header')
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <!-- Brand -->
-            <h1 class="navbar-brand" style="font-family: 'Faster One', cursive;font-size:40px;">FlySearch</h1>
+            <h1 class="navbar-brand" style="font-family: 'Faster One', cursive;font-size:40px;">Vi-Flights</h1>
             <!-- Links -->
             <ul class="navbar-nav">
                 <li class="nav-item">
@@ -57,9 +57,9 @@
     @section('footer')
         <div id="footer" class="container-fluid fixed-bottom">
             <div class="row">
-                <div class="col-4 mt-3"><p>&copy;FlySearch 2020</p></div>
+                <div class="col-4 mt-3"><p>&copy;Vi-Flights 2020</p></div>
                 <div class="col-4"></div>
-                <div class="col-4 mt-2"><h2>FlySearch</h2></div>
+                <div class="col-4 mt-2"><h2>Vi-Flights</h2></div>
             </div>
         </div>
     @show
