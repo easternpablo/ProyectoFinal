@@ -26,7 +26,7 @@ class AirportController extends Controller
         ]);
     }
 
-    public function form()
+    public function index()
     {
         return view('airports.gestion-destinos');
     }

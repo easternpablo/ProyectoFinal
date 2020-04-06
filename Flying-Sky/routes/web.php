@@ -17,10 +17,16 @@ Route::group(['prefix'=>'flysearch','middleware'=>'auth'], function () {
     Route::get('/aerolineas/delete/{id}','AirlineController@delete')->where('id','[0-9]+');
     Route::get('/aerolineas/detail/{id}','AirlineController@showDetail')->where('id','[0-9]+');
 
+    /*** Rutas Aviones ***/
+    Route::group(['prefix'=>'flota'],function(){
+
+        Route::get('/','PlanesController@index');
+    });
+
     /*** Rutas Destinos (Aeropuertos) ***/
     Route::group(['prefix'=>'destinos'], function () {
 
-        Route::get('/','AirportController@form');
+        Route::get('/','AirportController@index');
 
         /*** Rutas Países ***/
         Route::get('/paises','CountryController@showCountries');
