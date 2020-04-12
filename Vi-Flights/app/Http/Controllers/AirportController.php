@@ -33,7 +33,7 @@ class AirportController extends Controller
 
     public function showAirports()
     {
-        $airports = Airport::with('City')->orderBy('name','ASC')->paginate(4);
+        $airports = Airport::with('City')->orderBy('name','ASC')->paginate(3);
         return view('airports.showAirports',['airports'=>$airports]);
     }
 

@@ -12,9 +12,9 @@ class CreatePlanesTable extends Migration
             $table->bigIncrements('id');
             $table->string('name');
             $table->integer('engines');
-            $table->float('length');
-            $table->float('wingspan');
-            $table->integer('range');
+            $table->string('length');
+            $table->string('wingspan');
+            $table->string('range');
             $table->integer('seats');
             $table->string('routes');
             $table->integer('units');

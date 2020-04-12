@@ -1,9 +1,19 @@
 @extends('layouts.master')
-@section('titulo','Nuevo Aeropuerto')
+@section('titulo','Nuevo aeropuerto')
 
 @section('content')
-<div class="row mt-5">
-    <div class="col-12 mb-3">
+<div class="row mt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{ action('InicioController@index') }}">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="{{ action('AirportController@index') }}">Destinos</a></li>
+          <li class="breadcrumb-item"><a href="{{ action('AirportController@showAirports') }}">Aeropuertos</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Nuevo Aerpuerto</li>
+        </ol>
+    </nav>
+</div>
+<div class="row mt-2 mb-5">
+    <div class="col-12 mb-5">
         <div class="card">
             <div class="card-header">{{ __('Nuevo aeropuerto') }}</div>
             <div class="card-body">

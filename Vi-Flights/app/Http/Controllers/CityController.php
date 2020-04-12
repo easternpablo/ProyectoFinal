@@ -22,7 +22,7 @@ class CityController extends Controller
 
     public function showCities()
     {
-        $cities = City::with('Country')->orderBy('name','ASC')->paginate(4);
+        $cities = City::with('Country')->orderBy('name','ASC')->paginate(3);
         return view('cities.showCities',['cities'=>$cities]);
     }
 

@@ -1,8 +1,17 @@
 @extends('layouts.master')
-@section('titulo','Gestionar Países')
+@section('titulo','Gestionar países')
 
 @section('content')
-<div class="row mt-5 mb-5">
+<div class="row mt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{ action('InicioController@index') }}">Inicio</a></li>
+          <li class="breadcrumb-item"><a href="{{ action('AirportController@index') }}">Destinos</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Países</li>
+        </ol>
+    </nav>
+</div>
+<div class="row mt-2 mb-5">
     <h2>Gestión Países</h2>
     <table class="table table-hover">
         <thead>

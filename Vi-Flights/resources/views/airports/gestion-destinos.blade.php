@@ -1,8 +1,16 @@
 @extends('layouts.master')
-@section('titulo','Gestionar Destinos')
+@section('titulo','Gestionar destinos')
 
 @section('content')
-<div class="row mt-5 mb-5">
+<div class="row mt-3">
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="{{ action('InicioController@index') }}">Inicio</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Destinos</li>
+        </ol>
+    </nav>
+</div>
+<div class="row mb-5">
     <div class="col-md-4">
         <div class="card mt-5 mb-5" style="width:250px">
             <div class="card-header">Ciudades</div>

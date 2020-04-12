@@ -13,7 +13,7 @@ class CreateAirlinesPlanesTable extends Migration
             $table->unsignedBigInteger('airline_id');
             $table->unsignedBigInteger('plane_id');
             $table->foreign('airline_id')->references('id')->on('airlines');
-            $table->foreign('plane_id')->references('id')->on('planes');
+            $table->foreign('plane_id')->references('id')->on('planes')->onDelete('cascade');
             $table->timestamps();
         });
     }

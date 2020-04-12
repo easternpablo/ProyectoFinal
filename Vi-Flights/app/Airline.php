@@ -31,6 +31,6 @@ class Airline extends Model
     /*** Muchas Aerolíneas Muchos Aviones ***/
     public function planes()
     {
-        return $this->belongsToMany('App\Plane');
+        return $this->belongsToMany('App\Plane','airlinesplanes','airline_id','plane_id');
     }
 }
