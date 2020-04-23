@@ -49,4 +49,11 @@ Route::group(['prefix'=>'vi-flights','middleware'=>'auth'], function () {
         Route::get('/aeropuertos/delete/{id}','AirportController@delete')->where('id','[0-9]+');
         Route::get('/aeropuertos/detail/{id}','AirportController@showDetail')->where('id','[0-9]+');
     });
+    /*** Rutas Tripulación (Pilotos) ***/
+    Route::get('/pilotos','PilotController@showPilots');
+    Route::get('/pilotos/nuevo','PilotController@create');
+    Route::post('/pilotos/nuevo/submit','PilotController@save');
+    Route::get('/pilotos/{filename}','PilotController@getImage');
+    Route::get('/pilotos/delete/{id}','PilotController@delete')->where('id','[0-9]+');
+    Route::get('/pilotos/detail/{id}','PilotController@showDetail')->where('id','[0-9]+');
 });

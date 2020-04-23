@@ -21,7 +21,7 @@ class CountryController extends Controller
     public function showCountries()
     {
         $countries = Country::orderBy('name','ASC')->paginate(2);
-        return view('countries.showCountries',['countries'=>$countries]);
+        return view('countries.show',['countries'=>$countries]);
     }
 
     public function create()

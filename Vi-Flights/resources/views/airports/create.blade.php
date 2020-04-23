@@ -8,7 +8,7 @@
           <li class="breadcrumb-item"><a href="{{ action('InicioController@index') }}">Inicio</a></li>
           <li class="breadcrumb-item"><a href="{{ action('AirportController@index') }}">Destinos</a></li>
           <li class="breadcrumb-item"><a href="{{ action('AirportController@showAirports') }}">Aeropuertos</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Nuevo Aerpuerto</li>
+          <li class="breadcrumb-item active" aria-current="page">Nuevo Aeropuerto</li>
         </ol>
     </nav>
 </div>

@@ -44,7 +44,7 @@
                 <div class="card-header">Tripulación</div>
                 <img class="card-img-top" src="{{url('img/cabina.jpg')}}" alt="Card image" height="180px"/>
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary">Gestionar</a>
+                    <a href="{{ action('PilotController@showPilots') }}" class="btn btn-primary">Gestionar</a>
                 </div>
             </div>
         </div>
