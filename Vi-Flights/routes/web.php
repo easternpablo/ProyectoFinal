@@ -13,7 +13,7 @@ Route::group(['prefix'=>'vi-flights','middleware'=>'auth'], function () {
     Route::get('/aerolineas/delete/{id}','AirlineController@delete')->where('id','[0-9]+');
     Route::get('/aerolineas/detail/{id}','AirlineController@showDetail')->where('id','[0-9]+');
     /*** Rutas Aviones ***/
-    Route::group(['prefix'=>'flota'],function(){
+    Route::group(['prefix'=>'flota'], function(){
         Route::get('/','PlanesController@index');
         Route::get('/aviones','PlanesController@showPlanes');
         Route::get('/aviones/nuevo','PlanesController@create');
@@ -26,6 +26,14 @@ Route::group(['prefix'=>'vi-flights','middleware'=>'auth'], function () {
         Route::get('/aerolineas','AirlinePlaneController@showAirlines');
         Route::get('/aerolineas/listado-aviones/{id}','AirlinePlaneController@showPlanesAirline')->where('id','[0-9]+');
     });
+    /*** Ruta Vuelos ***/
+    Route::get('/vuelos','FlightController@showFlights');
+    Route::get('/vuelos/nuevo','FlightController@create');
+    Route::post('/vuelos/nuevo/submit','FlightController@save');
+    Route::get('/vuelos/delete/{id}','FlightController@delete')->where('id','[0-9]+');
+    Route::get('/vuelos/detail/{id}','FlightController@showDetail')->where('id','[0-9]+');
+    Route::get('/vuelos/oferta/nueva','FlightAirlineController@create');
+    Route::post('/vuelos/oferta/nueva/submit','FlightAirlineController@save');
     /*** Rutas Destinos (Aeropuertos) ***/
     Route::group(['prefix'=>'destinos'], function () {
         Route::get('/','AirportController@index');

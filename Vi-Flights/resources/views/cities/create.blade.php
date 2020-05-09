@@ -26,25 +26,13 @@
                             <option value="{{$country->id}}">{{$country->name}}</option>
                         @endforeach
                     </select>
-                    @error('country')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+                    @error('country')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                     <label for="name" class="col-form-label text-md-right">{{ __('Nombre') }}</label>
                     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-                    @error('name')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+                    @error('name')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                     <label for="file-city" class="col-form-label text-md-right">{{ __('Imagen') }}</label>
                     <input id="file-city" type="file" class="form-control-file border @error('file-city') is-invalid @enderror" name="file-city" value="{{ old('file-city') }}" required autocomplete="file-city" autofocus>
-                    @error('file-city')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+                    @error('file-city')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                     <button type="submit" name="submit" class="btn btn-success mt-4">{{ __('Añadir') }}</button>
                 </div>
             </form>

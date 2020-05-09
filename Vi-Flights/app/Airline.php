@@ -12,14 +12,7 @@ class Airline extends Model
     protected $table = 'airlines';
 
     protected $fillable = [
-        'iata',
-        'oaci',
-        'name',
-        'company',
-        'director',
-        'headquarter',
-        'airport_id',
-        'image',
+        'iata','oaci','name','company','director','headquarter','airport_id','image',
     ];
 
     /*** Muchas Aerolineas Un Aeropuerto ***/
@@ -32,5 +25,11 @@ class Airline extends Model
     public function planes()
     {
         return $this->belongsToMany('App\Plane','airlinesplanes','airline_id','plane_id');
+    }
+
+    /*** Muchas Aerolíneas Muchos Vuelos ***/
+    public function flights()
+    {
+        return $this->belongsToMany('App\Flight','flightsairlines','airline_id','flight_id');
     }
 }

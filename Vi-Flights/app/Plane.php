@@ -12,21 +12,18 @@ class Plane extends Model
     protected $table = 'planes';
 
     protected $fillable = [
-        'name',
-        'engines',
-        'length',
-        'wingspan',
-        'range',
-        'seats',
-        'routes',
-        'units',
-        'image',
-        'image2',
+        'name','engines','length','wingspan','range','seats','routes','units','image','image2',
     ];
 
     /*** Muchos Aviones Muchas Aerolíneas ***/
     public function airlines()
     {
         return $this->belongsToMany('App\Airline','airlinesplanes','plane_id','airline_id');
+    }
+
+    /*** Un Avión Muchos Vuelos ***/
+    public function flights()
+    {
+        return $this->hasMany('App\Flight');
     }
 }

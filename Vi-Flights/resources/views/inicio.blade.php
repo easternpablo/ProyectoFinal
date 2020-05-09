@@ -26,7 +26,7 @@
                 <div class="card-header">Vuelos</div>
                 <img class="card-img-top" src="{{url('img/comparador-vuelos.jpg')}}" alt="Card image" height="180px"/>
                 <div class="card-body">
-                    <a href="#" class="btn btn-primary">Gestionar</a>
+                    <a href="{{ action('FlightController@showFlights') }}" class="btn btn-primary">Gestionar</a>
                 </div>
             </div>
         </div>

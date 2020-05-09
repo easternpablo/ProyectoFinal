@@ -12,7 +12,12 @@ class Role extends Model
     protected $table = 'roles';
 
     protected $fillable = [
-        'name',
-        'description',
+        'name','description',
     ];
+
+    /*** Un Rol Muchos Usuarios ***/
+    public function users()
+    {
+        return $this->hasMany('App\User');
+    }
 }

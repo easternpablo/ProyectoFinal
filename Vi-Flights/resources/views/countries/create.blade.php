@@ -21,18 +21,10 @@
                 <div class="form-group row">
                     <label for="name" class="col-form-label text-md-right">{{ __('Nombre') }}</label>
                     <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-                    @error('name')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+                    @error('name')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                     <label for="file-country" class="col-form-label text-md-right">{{ __('Imagen') }}</label>
                     <input id="file-country" type="file" class="form-control-file border @error('file-country') is-invalid @enderror" name="file-country" value="{{ old('file-country') }}" required autocomplete="file-country" autofocus>
-                    @error('file-country')
-                        <span class="invalid-feedback" role="alert">
-                            <strong>{{ $message }}</strong>
-                        </span>
-                    @enderror
+                    @error('file-country')<span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>@enderror
                     <button type="submit" name="submit" class="btn btn-success mt-4">{{ __('Añadir') }}</button>
                 </div>
             </form>

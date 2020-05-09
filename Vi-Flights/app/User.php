@@ -13,10 +13,7 @@ class User extends Authenticatable
     protected $table = 'users';
 
     protected $fillable = [
-        'nick',
-        'email',
-        'password',
-        'role_id',
+        'nick','email','password','role_id',
     ];
 
     protected $hidden = ['password', 'remember_token',];

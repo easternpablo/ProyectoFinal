@@ -12,7 +12,12 @@ class Country extends Model
     protected $table = 'countries';
 
     protected $fillable = [
-        'name',
-        'image',
+        'name','image',
     ];
+
+    /*** Un País Muchas Ciudades ***/
+    public function cities()
+    {
+        return $this->hasMany('App\City');
+    }
 }
