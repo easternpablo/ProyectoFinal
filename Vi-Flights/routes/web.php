@@ -5,6 +5,7 @@ Route::get('/', 'HomeController@index')->name('home');
 
 Route::group(['prefix'=>'vi-flights','middleware'=>'auth'], function () {
     Route::get('/','InicioController@index');
+    Route::get('/mi-panel','Inicio2Controller@index');
     /*** Rutas Aerolíneas ***/
     Route::get('/aerolineas','AirlineController@showAirlines');
     Route::get('/aerolineas/nuevo','AirlineController@create');

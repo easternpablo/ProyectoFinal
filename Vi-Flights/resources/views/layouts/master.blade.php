@@ -33,15 +33,19 @@
                     </div>
                 </li>
                 <!-- Dropdown -->
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-                        easternpablo
-                    </a>
-                    <div class="dropdown-menu">
-                      <a class="dropdown-item" href="#">Mi perfil</a>
-                      <a class="dropdown-item" href="#">Configuración</a>
-                    </div>
-                </li>
+                @if(Route::has('login'))
+                    @auth
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                {{ auth()->user()->nick }}
+                            </a>
+                            <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Mi perfil</a>
+                            <a class="dropdown-item" href="#">Configuración</a>
+                            </div>
+                        </li>
+                    @endauth
+                @endif
                 <form action="{{ url('/logout') }}" method="POST" style="display:inline">
                     {{ csrf_field() }}
                     <button type="submit" class="btn btn-link nav-link" style="display:inline;cursor:pointer;">

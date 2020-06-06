@@ -15,7 +15,7 @@
     @foreach($airlines as $airline)
         <div class="col-md-2">
             <a href="{{ action('AirlinePlaneController@showPlanesAirline',['id'=>$airline->id]) }}">
-                <div class="card" style="width:180px; height:90px;">
+                <div class="card mt-1" style="width:180px; height:90px;">
                     <img class="card-img-top" src="{{ action("AirlineController@getImage",['image'=>$airline->image]) }}" alt="Card image" style="width:100%; height:100%;"/>
                 </div>
             </a>
