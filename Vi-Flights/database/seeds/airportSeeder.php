@@ -18,7 +18,7 @@ class airportSeeder extends Seeder
                 'type' => 'Público',
                 'owner' => 'ENAIRE',
                 'operator' => 'Aena',
-                'image' => '1585651886madrid-airport.jpg',
+                'image' => 'airport-madrid.jpg',
             ),
             array(
                 'iata' => 'XRY',
@@ -29,7 +29,7 @@ class airportSeeder extends Seeder
                 'type' => 'Público',
                 'owner' => 'ENAIRE',
                 'operator' => 'Aena',
-                'image' => '1588243767airport-jerez-frontera.jpg',
+                'image' => 'airport-jerez.jpg',
             ),
             array(
                 'iata' => 'LHR',
@@ -40,7 +40,7 @@ class airportSeeder extends Seeder
                 'type' => 'Público',
                 'owner' => 'Heathrow Airport Holdings',
                 'operator' => 'Heathrow Airport Limited',
-                'image' => '1585652555heathrow-airport.jpg',
+                'image' => 'airport-heathrow.jpg',
             ),
             array(
                 'iata' => 'STN',
@@ -51,7 +51,7 @@ class airportSeeder extends Seeder
                 'type' => 'Público',
                 'owner' => 'Manchester Airports Group',
                 'operator' => 'BAA',
-                'image' => '1585825346aeropuerto-stansted.jpg',
+                'image' => 'airport-stansted.jpg',
             ),
             array(
                 'iata' => 'FRA',
@@ -62,7 +62,7 @@ class airportSeeder extends Seeder
                 'type' => 'Público',
                 'owner' => 'Fraport',
                 'operator' => 'Fraport',
-                'image' => '1586528776Frankfurt-Airport.jpg',
+                'image' => 'airport-frankfurt.jpg',
             ),
             array(
                 'iata' => 'DUB',
@@ -73,7 +73,7 @@ class airportSeeder extends Seeder
                 'type' => 'Público',
                 'owner' => 'Gobierno de Irlanda',
                 'operator' => 'Dublin Airport Authority',
-                'image' => '1585824585airport-dublin.jpg',
+                'image' => 'airport-dublin.jpg',
             ),
             array(
                 'iata' => 'DOH',
@@ -84,7 +84,29 @@ class airportSeeder extends Seeder
                 'type' => null,
                 'owner' => null,
                 'operator' => 'Qatar Airways',
-                'image' => '1585999335airport-hamad.jpg',
+                'image' => 'airport-hamad.jpg',
+            ),
+            array(
+                'iata' => 'BCN',
+                'oaci' => 'LEBL',
+                'name' => 'Josep Tarradellas Barcelona-El Prat',
+                'coordinates' => '41°17′49″N 2°04′42″E',
+                'city_id' => 9,
+                'type' => 'Público',
+                'owner' => 'ENAIRE',
+                'operator' => 'Aena',
+                'image' => 'airport-barcelona.jpg',
+            ),
+            array(
+                'iata' => 'DFW',
+                'oaci' => 'KDFW',
+                'name' => 'Dallas-Fort Worth',
+                'coordinates' => '32°53′49″N 97°02′17″O',
+                'city_id' => 10,
+                'type' => 'Público',
+                'owner' => 'Dallas y Fort Worth',
+                'operator' => null,
+                'image' => 'airport-dallas.jpg',
             ),
         );
 

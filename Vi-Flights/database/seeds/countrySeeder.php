@@ -11,23 +11,27 @@ class countrySeeder extends Seeder
         $this->arrayCountries = array(
             array(
                 'name' => 'España',
-                'image' => '1585421964españa.jpg',
+                'image' => 'españa.jpg',
             ),
             array(
                 'name' => 'Reino Unido',
-                'image' => '1585423365gran-bretaña.jpg',
+                'image' => 'reino-unido.jpg',
             ),
             array(
                 'name' => 'Alemania',
-                'image' => '1585568325alemania.jpg',
+                'image' => 'alemania.jpg',
             ),
             array(
                 'name' => 'Irlanda',
-                'image' => '1585823607irlanda.jpg',
+                'image' => 'irlanda.jpg',
             ),
             array(
                 'name' => 'Catar',
-                'image' => '1585998060catar.jpg',
+                'image' => 'catar.png',
+            ),
+            array(
+                'name' => 'America',
+                'image' => 'america.png',
             ),
         );
 

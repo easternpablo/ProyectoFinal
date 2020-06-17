@@ -10,44 +10,54 @@ class citySeeder extends Seeder
     {
         $this->arrayCities = array(
             array(
-                'country_id' => '1',
+                'country_id' => 1,
                 'name' => 'Madrid',
-                'image' => '1585559111madrid.jpg',
+                'image' => 'madrid.jpg',
             ),
             array(
-                'country_id' => '1',
+                'country_id' => 1,
                 'name' => 'Jerez de la Frontera',
-                'image' => '1588243490jerez-frontera.jpg',
+                'image' => 'jerez.jpg',
             ),
             array(
-                'country_id' => '2',
+                'country_id' => 2,
                 'name' => 'Hillingdon (Londres)',
-                'image' => '1585488421londres.jpg',
+                'image' => 'londres.jpeg',
             ),
             array(
-                'country_id' => '2',
+                'country_id' => 2,
                 'name' => 'Crawley (Londres)',
-                'image' => '1585488421londres.jpg',
+                'image' => 'londres.jpeg',
             ),
             array(
-                'country_id' => '2',
+                'country_id' => 2,
                 'name' => 'Stansted Mountfitchet (Londres)',
-                'image' => '1585488421londres.jpg',
+                'image' => 'londres.jpeg',
             ),
             array(
-                'country_id' => '3',
+                'country_id' => 3,
                 'name' => 'Frankfurt',
-                'image' => '1586528492Frankfurt.jpg',
+                'image' => 'frankfurt.jpg',
             ),
             array(
-                'country_id' => '4',
+                'country_id' => 4,
                 'name' => 'Dublín',
-                'image' => '1585824010dublin.jpg',
+                'image' => 'dublin.jpg',
             ),
             array(
-                'country_id' => '5',
+                'country_id' => 5,
                 'name' => 'Doha',
-                'image' => '1585998676doha(catar).jpg',
+                'image' => 'doha.jpg',
+            ),
+            array(
+                'country_id' => 1,
+                'name' => 'Barcelona',
+                'image' => 'barcelona.jpeg',
+            ),
+            array(
+                'country_id' => 6,
+                'name' => 'Texas',
+                'image' => 'texas.jpg',
             ),
         );
 
