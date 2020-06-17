@@ -20,7 +20,7 @@ class pilotSeeder extends Seeder
                 'birth_date' => '1980-02-10',
                 'license_date' => '2010-01-01',
                 'nationality' => 'Española',
-                'image' => '1587470231identificacion-hombre.jpg',
+                'image' => 'identificacion_hombre.jpg',
             ),
             array(
                 'pilot_number' => 'IBE013',
@@ -33,7 +33,7 @@ class pilotSeeder extends Seeder
                 'birth_date' => '1995-08-28',
                 'license_date' => '2019-04-25',
                 'nationality' => 'Española',
-                'image' => '1587292831identificacion-hombre.jpg',
+                'image' => 'identificacion_hombre.jpg',
             ),
         );
 

@@ -18,8 +18,8 @@ class planeSeeder extends Seeder
                 'seats' => 171,
                 'routes' => 'Corto y medio radio',
                 'units' => 16,
-                'image' => '1586516260A320Iberia.jpg',
-                'image2' => '1586516260MapaA320Iberia.jpg',
+                'image' => 'IberiaAirbus320.jpg',
+                'image2' => 'IberiaMapaAirbus320.jpg',
             ),
             array(
                 'name' => 'Airbus A350',
@@ -30,8 +30,8 @@ class planeSeeder extends Seeder
                 'seats' => 348,
                 'routes' => 'Largo radio',
                 'units' => 4,
-                'image' => '1586517261A350Iberia.jpg',
-                'image2' => '1586517261MapaA350Iberia.jpg',
+                'image' => 'IberiaAirbus350.jpg',
+                'image2' => 'IberiaMapaAirbus350.jpg',
             ),
             array(
                 'name' => 'Airbus A350-1000',
@@ -42,8 +42,8 @@ class planeSeeder extends Seeder
                 'seats' => 440,
                 'routes' => 'Largo radio',
                 'units' => 15,
-                'image' => '1586518154A350Qatar.jpg',
-                'image2' => '1586518154MapaA350Qatar.jpg',
+                'image' => 'QatarAirbus350-1000.jpg',
+                'image2' => 'QatarMapaAirbus350-1000.png',
             ),
             array(
                 'name' => 'Airbus A319',
@@ -54,8 +54,8 @@ class planeSeeder extends Seeder
                 'seats' => 141,
                 'routes' => 'Corto y medio radio',
                 'units' => 16,
-                'image' => '1586523211A319Iberia.jpg',
-                'image2' => '1586523211MapaIberiaA319.jpg',
+                'image' => 'IberiaAirbus319.jpg',
+                'image2' => 'IberiaMapaAirbus319.png',
             ),
             array(
                 'name' => 'Airbus A319-100',
@@ -66,8 +66,8 @@ class planeSeeder extends Seeder
                 'seats' => 144,
                 'routes' => 'Corto y medio radio',
                 'units' => 39,
-                'image' => '1586343581airbus319-100britishairways.jpg',
-                'image2' => '1586343581MapaAirbusA319-100BritishAirways.jpg',
+                'image' => 'BritishAirwaysAirbus319-100.jpg',
+                'image2' => 'BritishAirwaysMapaAirbusA319-100.jpg',
             ),
             array(
                 'name' => 'Airbus A380-800',
@@ -78,8 +78,8 @@ class planeSeeder extends Seeder
                 'seats' => 469,
                 'routes' => 'Largo radio',
                 'units' => 12,
-                'image' => '1586523940A380-800BritishAirways.jpg',
-                'image2' => '1586523940MapaA380-800BritishAirways.jpg',
+                'image' => 'BritishAirwaysAirbus380-800.jpg',
+                'image2' => 'BritishAirwaysMapaAirbus380-800.jpg',
             ),
         );
 
